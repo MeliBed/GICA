@@ -1,0 +1,342 @@
+html {
+    font-size: 62.5%;
+    margin: 0;
+	padding: 0;
+	border: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "cream";
+    font-style: normal;
+    font-weight: normal ;
+    src: url('../Fonts/cream_2/cream-DEMO.otf'); 
+}
+
+@font-face{
+    font-family: "comfortaa";
+    font-style: normal;
+    font-weight: normal ;
+    src: url('../Fonts/Comfortaa/Comfortaa-Regular.ttf'); 
+}
+
+@font-face{
+    font-family: "trajanus";
+    font-style: normal;
+    font-weight: normal ;
+    src: url('../Fonts/trajanusbricks/TrajanusBricks.ttf'); 
+}
+
+
+
+
+body{
+    background-color:#3c415c;
+
+}
+
+h1{
+
+    color: seashell;
+    font-size: x-large;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+   
+}
+
+h3{
+
+    color: seashell;
+    font-size: medium;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    padding-left: 0.5rem;
+   
+}
+.barranav{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color:#151515;
+    position: relative;
+    height: 10rem;
+    width: 95%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+
+/*links barra de navegación*/
+.lista-barranav a {
+    display: flex;
+    color: rgb(202, 192, 192) ;
+    font-family:"comfortaa";
+    font-size:small;
+    right: 0;
+    justify-content: flex-end;
+    align-self: flex-start;
+    
+}
+
+ 
+ul li{
+    margin: 0.5em;
+    list-style-type: none;
+}
+
+a{
+    text-decoration:none ; 
+    color: white;
+    text-transform: uppercase;
+    font-size: .5em;
+}
+
+ a:hover {  
+    background:turquoise;
+    color: #666;
+    border: 1px solid rgb(10, 4, 44);
+   
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.3s;
+}
+
+a:visited{ 
+    color: rgb(202, 192, 192) ;
+    background-color: black;
+}
+
+
+
+nav img{
+    border-radius: 50%; /*Hago la imagen circular*/
+}
+
+/*container-flex*/
+.articulo{
+
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    background-color:#b4a5a5;
+    justify-content: space-between;
+    position: relative;
+    left: 12rem;
+    top: 7.5rem;
+    border: solid rgb(16, 17, 16);
+    width: 80vw;
+    margin: 3rem;
+}
+
+
+/*flexitem*/
+.section{
+ 
+    background-color: #301B3F;
+    opacity: 0.7;
+    border: solid rgb(16, 17, 16);
+    width: 25%;
+    color: white;
+    margin: 5rem;
+    font-family: "cream";
+   
+}
+
+section img{
+    width: 100%;
+    height: 15rem;
+}
+
+
+.sectionMayus{
+
+    background-color: #301B3F;
+    opacity: 0.7;
+    padding: 5rem;
+    border: solid rgb(16, 17, 16);
+    width: 10rem;
+    height: 7rem;
+    color: white;
+    margin: 3rem;
+    font-family: "trajanus";
+    font-size: xx-large;
+    box-shadow: 1rem 1rem 5rem #666;
+       
+}
+
+.mapa {
+
+    width: 25%;
+    margin: 3rem;
+    font-family: "cream";
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+  
+}
+
+.piedepagina{
+
+    display: flex;
+    background-color:#151515;
+    justify-content: center;
+    color:#b4a5a5;
+    font-family: "cream";
+    font-weight: bold;
+    margin-top: 29rem;
+    height: 6rem;
+
+}
+
+.formulario {
+
+    box-sizing: border-box;
+    background-color:#b4a5a5;
+    position: relative;
+    left: 12rem;
+    top: 7.5rem;
+    border: solid rgb(16, 17, 16);
+    width: 80vw;
+    margin: 3rem;
+    padding-left: 0.5rem;
+}
+
+.bajate {
+
+    position: relative;
+    left: 12rem;
+    top: 7.5rem;
+    width: 80vw;
+    margin: 3rem;
+}
+
+
+/*TARJETAS FLEXBOX*/
+
+.tarjeta{
+	background: #b4a5a5;
+	margin-bottom: 2em;
+	width: 25%;
+    height:auto;
+    border: solid rgb(16, 17, 16);
+}
+
+.cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.tarjeta a{
+	color: black;
+	text-decoration: none;
+}
+
+.tarjeta-content{  
+	padding: 1.4em;
+}
+
+.tarjeta-content h2{
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight:bold;
+    font-family: "cream";
+    font-size: 1.5rem;
+}
+
+.tarjeta-content p{
+	font-size: 1rem;
+    font-family: "Comfortaa";
+}
+
+figure{
+	margin: auto;
+}
+
+.imagen tarjeta{
+	display: block;
+	border:0;
+	width: 100%;
+	height: auto;
+}
+
+
+/*GRID*/
+
+.container {
+    padding: 1rem;
+    height: 100rem;
+    display: grid;
+    grid-template-areas: "dos dos tres" 
+                         "uno uno tres" 
+                         "uno uno tres"
+                         "cuatro cuatro cuatro";
+    grid-gap: 0.8rem;
+}
+
+.s1 {
+    grid-area: uno;
+}
+
+.s1 img{
+    width: 100%; 
+    height: 100%;
+}
+
+.s3 img{
+    width: 100%; 
+    height: 100%;
+}
+
+.s2 {
+    background-color: #301B3F;
+    opacity: 0.7;
+    border: solid rgb(16, 17, 16);
+    color: white;
+    font-family: "cream";
+    font-size: large;
+    grid-area: dos;
+}
+
+.s3 {
+    grid-area: tres;
+}
+
+.s4{
+    background-color: #301B3F;
+    opacity: 0.7;
+    border: solid rgb(16, 17, 16);
+    color: white;
+    font-family: "cream";
+    font-size: large;
+    grid-area: cuatro;
+}
+
+/*Media Queries*/
+
+
+@media screen and (max-width: 640px) {
+    .container {
+        grid-template-areas: "tres tres tres" 
+                              "dos dos dos"
+                              "uno uno uno"
+                              "cuatro cuatro cuatro";
+    }
+}
+
+    
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .container {
+        grid-template-areas:  "uno tres "
+                              "uno tres"
+                              "dos dos"
+                              "cuatro cuatro";
+    }
+}
